@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+//    int input_i = 0;
+//    int index , j = 0;
+//    int sum[] = {0};
+//    int size_i = 0;
+//
+//    scanf("%d", &input_i);
+//    for(index = 2 ; index <= 10; index++)
+//    {
+//        if(input_i % index == 0)
+//        {
+//            printf("%d \n" , index );
+//        }
+//    }
+//    printf("%d",size_i);
+//    for(index = 0 ; index < 12 ; index ++)
+//    {
+//        printf("sum[%d] = %d \n",index , sum[index]);
+//    }
+
+
+test();
+
+}
+
+
+int test()
+{
+int no,sum=1,rem=0;
+printf("\nEnter a Number: ");
+scanf("%d",&no);
+while(no>0)
+{
+rem=no%10;
+sum=sum*rem;
+no=no/10;
+}
+printf("\nProduct of digits of a number: %d",sum);
+getch();
+
+}
+
