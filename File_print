@@ -1,0 +1,9 @@
+void veiw_list_member() //將檔案資料顯示出來
+{
+    FILE *stearm ;
+    char f_get;
+    if((stearm=fopen(member_file,"r"))==NULL)printf("error!");
+    while((f_get = fgetc(stearm)) !=EOF )
+        fputc(f_get,stdout);
+    fclose(stearm);
+}
